@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Beck - Furniture eCommerce Bootstrap 4 Template</title>
+    <title>Flirt First</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicons -->
@@ -30,8 +30,8 @@
             <div class="ft-child ft-bounce3"></div>
         </div>
     </div>
- 
 
+ 
     <!-- Main Wrapper Start -->
     <div class="wrapper">
         <!-- Header Start -->
@@ -142,117 +142,22 @@
             </div>
         </header>
 
-        <!-- Breadcrumb area Start -->
-        <section class="page-title-area bg-image ptb--80" data-bg-image="assets/img/bg/page_title_bg.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h1 class="page-title">Inbox</h1>
-                        <ul class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="current"><span>Inbox</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="container">
+            <header class="text-center row">
+              <h1>Message with Zak Bagans</h1>
+            </header>
+            <div id="messages"></div>
+            <form class="inputBar row" onsubmit="sendMessage(event)">
+              <div class="col-10">
+                <input class="form-control" type="text" id="messageInput" />
+              </div>
+              <div class="col-2">
+                <button class="btn btn-info" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
 
-
-        <!-- Main Content Wrapper Start -->
-        <div class="main-content-wrapper">
-            <div class="page-content-inner ptb--80 ptb-md--60">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="table-content table-responsive">
-                                <table class="table table-style-2 inbox-table text-center">
-                                    <thead>
-                                        <tr>
-                                            <th>&nbsp;</th>
-                                            <th>&nbsp;</th>
-                                            <th class="text-left">User</th>
-                                            <th>Online Status</th>
-                                            <th>Location</th>
-                                            <th>&nbsp;</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="user-remove text-left"><a href=""><i class="la la-remove"></i></a></td>
-                                            <td class="user-thumbnail text-left">
-                                                <img src="assets/img/products/prod-02-70x88.jpg" alt="User Thumbnail">
-                                            </td>
-                                            <td class="user-name text-left wide-column">
-                                                <h3>
-                                                    <a href="user-details.html">Zak Bagans</a>
-                                                </h3>
-                                            </td>
-                                            <td class="user-stock">
-                                                Not Online
-                                            </td>
-                                            <td class="user-price">
-                                                <span class="user-price-wrapper">
-                                                    <span class="money">Ithaca NY</span>
-                                                </span>
-                                            </td>
-                                            <td class="user-action-btn">
-                                                <a href="chat.html" class="btn btn-size-md">Message Now</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="user-remove text-left"><a href=""><i class="la la-remove"></i></a></td>
-                                            <td class="user-thumbnail text-left">
-                                                <img src="assets/img/products/prod-01-70x88.jpg" alt="User Thumbnail">
-                                            </td>
-                                            <td class="user-name text-left wide-column">
-                                                <h3>
-                                                    <a href="user-details.html">Person McPerson</a>
-                                                </h3>
-                                            </td>
-                                            <td class="user-stock">
-                                                Online Now
-                                            </td>
-                                            <td class="user-price">
-                                                <span class="user-price-wrapper">
-                                                    <span class="money">Rome NY</span>
-                                                </span>
-                                            </td>
-                                            <td class="user-action-btn">
-                                                <a href="chat.html" class="btn btn-size-md">Message Now</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="user-remove text-left"><a href=""><i class="la la-remove"></i></a></td>
-                                            <td class="user-thumbnail text-left">
-                                                <img src="assets/img/products/prod-02-70x88.jpg" alt="User thumbnail">
-                                            </td>
-                                            <td class="user-name text-left wide-column">
-                                                <h3>
-                                                    <a href="user-details.html">Swim Shady</a>
-                                                </h3>
-                                            </td>
-                                            <td class="user-stock">
-                                                Not Online
-                                            </td>
-                                            <td class="user-price">
-                                                <span class="user-price-wrapper">
-                                                    <span class="money">Oswego NY</span>
-                                                </span>
-                                            </td>
-                                            <td class="user-action-btn">
-                                                <a href="chat.html" class="btn btn-size-md">Message Now</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>  
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+        
         <!-- Footer Start-->
         <footer class="footer bg-color" data-bg-color="#f4f8fa">
             <div class="footer-bottom">
@@ -268,7 +173,6 @@
 
 
 
-       
 
         <!-- Mini Cart Start -->
         <aside class="mini-cart" id="miniCart">
@@ -285,10 +189,10 @@
                                     <i class="la la-remove"></i>
                                 </a>
                                 <div class="mini-cart__user-image">
-                                    <img src="assets/img/products/prod-01-100x100.jpg" alt="users">
+                                    <img src="assets/img/products/prod-01-100x100.jpg" alt="user">
                                 </div>
                                 <div class="mini-cart__user-content">
-                                    <a class="mini-cart__user-title" href="user-details.html">Golden Easy Spot Chair.</a>
+                                    <a class="mini-cart__user-title" href="user-profile.html">Golden Easy Spot Chair.</a>
                                     <span class="mini-cart__user-quantity">1 x $49.00</span>
                                 </div>
                             </li>
@@ -300,7 +204,7 @@
                                     <img src="assets/img/products/prod-02-100x100.jpg" alt="users">
                                 </div>
                                 <div class="mini-cart__user-content">
-                                    <a class="mini-cart__user-title" href="user-details.html">Golden Easy Spot Chair.</a>
+                                    <a class="mini-cart__user-title" href="user-profile.html">Golden Easy Spot Chair.</a>
                                     <span class="mini-cart__user-quantity">1 x $49.00</span>
                                 </div>
                             </li>
@@ -312,7 +216,7 @@
                                     <img src="assets/img/products/prod-03-100x100.jpg" alt="users">
                                 </div>
                                 <div class="mini-cart__user-content">
-                                    <a class="mini-cart__user-title" href="user-details.html">Golden Easy Spot Chair.</a>
+                                    <a class="mini-cart__user-title" href="user-profile.html">Golden Easy Spot Chair.</a>
                                     <span class="mini-cart__user-quantity">1 x $49.00</span>
                                 </div>
                             </li>
@@ -329,7 +233,95 @@
                 </div>
             </div>
         </aside>
-        <!-- Mini Cart End -->
+
+        
+        <!-- Quick View Modal Start -->
+        <div class="modal fade user-modal" id="#userModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="la la-remove"></i></span>
+                  </button>
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <div class="element-carousel slick-vertical-center"
+                          data-slick-options='{
+                              "slidesToShow": 1,
+                              "slidesToScroll": 1,
+                              "arrows": true,
+                              "prevArrow": {"buttonClass": "slick-btn slick-prev", "iconClass": "la la-angle-double-left" },
+                              "nextArrow": {"buttonClass": "slick-btn slick-next", "iconClass": "la la-angle-double-right" }
+                          }'
+                          >
+                              <div class="user-image">
+                                  <div class="user-image--holder">
+                                      <a href="user-profile.html">
+                                          <img src="assets/img/products/prod-01.jpg" alt="User Image" class="primary-image">
+                                      </a>
+                                  </div>
+                                  <span class="user-badge sale">sale</span>
+                              </div>
+                              <div class="user-image">
+                                  <div class="user-image--holder">
+                                      <a href="user-profile.html">
+                                          <img src="assets/img/products/prod-02.jpg" alt="User Image" class="primary-image">
+                                      </a>
+                                  </div>
+                                  <span class="user-badge sale">sale</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6">
+                          <div class="modal-box user-summary">
+                              <div class="user-navigation text-right mb--20">
+                                  <a href="#" class="prev"><i class="la la-angle-double-left"></i></a>
+                                  <a href="#" class="next"><i class="la la-angle-double-right"></i></a>
+                              </div>
+                              <div class="user-rating d-flex mb--20">
+                                  <div class="star-rating star-three">
+                                      <span>Rated <strong class="rating">5.00</strong> out of 5</span>
+                                  </div>
+                              </div>
+                              <h3 class="user-title mb--20">User</h3>
+                              <p class="user-short-description mb--25">Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit arcu.</p>
+                              <div class="user-price-wrapper mb--25">
+                                  <span class="money">Location</span>
+                              </div>
+                              <form action="#" class="variation-form mb--30">
+        
+                                  <div class="user-size-variations d-flex align-items-center mb--15">
+                                      <p class="variation-label">Age:</p>   
+                                      <div class="user-size-variation variation-wrapper">
+                                          <div class="variation">
+                                              <a class="user-size-variation-btn selected" data-toggle="tooltip" data-placement="top" title="S">
+                                                  <span class="user-size-variation-label">29</span>
+                                              </a>
+                                          </div>
+                                      </div>                                 
+                                  </div>
+                              </form>
+                              <div class="user-action d-flex flex-sm-row flex-column align-items-sm-center align-items-start mb--30">
+                                  <button type="button" class="btn btn-size-sm btn-shape-square" onclick="window.location.href='cart.html'">
+                                      Message Now
+                                  </button>
+                              </div>  
+                              <div class="user-footer-meta">
+                                  <p><span>Interests:</span>
+                                      <a href="shop.html">Nature</a>,
+                                      <a href="shop.html">Movies</a>,
+                                      <a href="shop.html">Comedy</a>,
+                                      <a href="shop.html">Other</a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
         <!-- Searchform Popup Start -->
         <div class="searchform__popup" id="searchForm">
@@ -345,14 +337,13 @@
 
 
 
-
         <!-- Global Overlay Start -->
         <div class="global-overlay"></div>
-        <!-- Global Overlay End -->
+
 
         <!-- Global Overlay Start -->
         <a class="scroll-to-top" href=""><i class="la la-angle-double-up"></i></a>
-        <!-- Global Overlay End -->
+
     </div>
     <!-- Main Wrapper End -->
  
@@ -364,6 +355,9 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Chat JS -->
+    <script src="assets/js/chatscript.js"></script>
 </body>
 
 </html>

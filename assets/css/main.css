@@ -805,9 +805,7 @@ a, button, .item-overlay, .global-overlay, .pagination li .page-number, .scroll-
     border-right-color: transparent;
     border-top-color: #000; }
 
-/*-- Google Map --*/
-#google-map {
-  height: 350px; }
+
 
 /*-- Mailchimp Alerts --*/
 .mailchimp-alerts div:not(:empty) {

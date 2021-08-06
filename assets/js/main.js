@@ -188,14 +188,14 @@
 	});
 
 	/**********************
-	*Click on Documnet
+	*Click on Document
 	***********************/
 
 	$body.on('click', function (e){
 	    var $target = e.target;
 	    var dom = $('.wrapper').children();
 	    
-	    if (!$($target).is('.toolbar-btn') && !$($target).is('.user-filter-btn') && !$($target).parents().is('.open')) {
+	    if (!$($target).is('.toolbar-btn') && !$($target).is('.product-filter-btn') && !$($target).parents().is('.open')) {
 	        dom.removeClass('open');
 	        $body.removeClass('body-open');
 	        dom.find('.open').removeClass('open');
