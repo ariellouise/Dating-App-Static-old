@@ -1,0 +1,21 @@
+{
+  "name": "Furtrate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch scss -o assets/css"
+  },
+  "author": "Hasan Mobarak",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jest": "^27.0.6",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.9.3",
+    "test": "^0.6.0"
+  },
+  "devDependencies": {
+    "cypress": "^8.2.0"
+  }
+}
